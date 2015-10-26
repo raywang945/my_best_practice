@@ -7,7 +7,7 @@ server         = require('gulp-server-livereload')
 sourcemaps     = require('gulp-sourcemaps')
 concat         = require('gulp-concat')
 plumber        = require('gulp-plumber')
-rimraf         = require('rimraf')
+del            = require('del')
 
 gulp.task 'jade', ->
     gulp.src('./src/**/*.jade')
@@ -34,8 +34,8 @@ gulp.task 'bower', ->
         .pipe(gulp.dest('./dest/js/'))
         .pipe(filterJS.restore)
 
-gulp.task 'clean', (cb) ->
-    rimraf('./dest/*', cb)
+gulp.task 'clean', ->
+    del.sync(['./dest/*'])
 
 gulp.task 'watch', ->
     gulp.watch('./src/**/*.jade', ['jade'])
