@@ -45,9 +45,10 @@ gulp.task 'watch', ->
 gulp.task 'webserver', ->
     gulp.src('./dest/')
         .pipe(server(
+            #host: '192.168.0.101'
+            #port: 8001
             livereload: true
             open: true
-            port: 8001
         ))
 
 gulp.task 'default', ['clean', 'jade', 'coffee', 'bower', 'watch', 'webserver']
