@@ -1,0 +1,21 @@
+{
+  "name": "simple_web_development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shuo-Yang Wang",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-server-livereload": "^1.5.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "rimraf": "^2.4.3"
+  }
+}

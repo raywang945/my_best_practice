@@ -1,0 +1,18 @@
+{
+  "name": "simple_web_development",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Shuo-Yang Wang"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/raywang945/my_best_practice",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
